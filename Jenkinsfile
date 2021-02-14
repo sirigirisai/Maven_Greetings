@@ -1,7 +1,7 @@
-pipeline {
+pipeline{
     agent any
-    stages {
-		stage('GIT){
+    stages{
+		stage('GIT'){
 			steps{
 			git url:"https://github.com/sirigirisai/Maven_Greetings.git"
 			}
