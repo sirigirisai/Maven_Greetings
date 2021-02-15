@@ -9,11 +9,11 @@ pipeline{
         stage('SonarQube analysis 1') {
             steps {
 			   withSonarQubeEnv('sonarserver') {
-                sh 'mvn sonar:sonar \
+				mvn sonar:sonar \
   -Dsonar.projectKey=greet \
   -Dsonar.host.url=http://localhost:9000 \
-  -Dsonar.login=505199b16d2b8853fc6618fe353286248d08a8e3'
-				}
+  -Dsonar.login=d4451a4b26314edc02c7f3c5ffd5c079e9c7029a
+	  }
             }
         }
 	}
